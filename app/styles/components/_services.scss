@@ -1,0 +1,49 @@
+.services-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 6rem;
+}
+
+.service-item {
+  max-width: 570px;
+  padding: 130px 40px 40px;
+  background-color: $white;
+
+  @media screen and (min-width: 991px) {
+    padding: 165px 63px 60px;
+  }
+
+  &:nth-of-type(1) {
+    background: url("../images/service-1.png") no-repeat 40px 30px;
+    box-shadow: 0 0 30px rgba(246, 204, 153, 0.35);
+
+    @media screen and (min-width: 991px) {
+      background: url("../images/service-1.png") no-repeat 63px 55px;
+    }
+  }
+
+  &:nth-of-type(2) {
+    background: url("../images/service-2.png") no-repeat 40px 30px;
+    box-shadow: 0 0 30px rgba(208, 208, 208, 0.35);
+
+    @media screen and (min-width: 991px) {
+      background: url("../images/service-2.png") no-repeat 63px 55px;
+    }
+  }
+}
+
+.service-item__heading {
+  color: #2d364d;
+  font-size: 1.625rem;
+  font-weight: 700;
+  line-height: 38px;
+}
+
+.service-item__text {
+  margin-top: 20px;
+
+  @media screen and (min-width: 991px) {
+    margin-top: 40px;
+  }
+}

@@ -1,0 +1,15 @@
+.main-nav {
+  display: flex;
+}
+
+.main-nav__link {
+  font-size: 1.375rem;
+  font-weight: 600;
+  color: $dark-grey;
+  text-decoration: none;
+  margin-right: 58px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}

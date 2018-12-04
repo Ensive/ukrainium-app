@@ -1,0 +1,29 @@
+.hero {
+  background: url("../images/hero-bg.png") no-repeat center center;
+  height: 95vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-size: cover;
+
+
+  @media screen and (min-width: 991px){
+    background-size: 100%;
+
+  }
+}
+
+.hero__heading {
+  font-size: 4.25rem;
+  max-width: 900px;
+  font-weight: 700;
+  line-height: 1.176;
+  text-transform: uppercase;
+}
+
+.hero__text {
+  font-size: 1.562rem;
+  margin-top: 3.9rem;
+  max-width: 610px;
+}
+

@@ -1,0 +1,10 @@
+.list__item {
+  list-style: bullet;
+  margin-top: 15px;
+  line-height: 1.8;
+  color: $light-grey;
+
+  &:first-child {
+    margin-top: 0;
+  }
+}

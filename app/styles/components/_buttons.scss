@@ -1,0 +1,21 @@
+.button {
+  background-color: $orange;
+  color: $white;
+  text-transform: uppercase;
+  font-weight: 600;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 18px;
+}
+
+.button--hero {
+  display: block;
+  height: 60px;
+  width: 232px;
+  margin-top: 105px;
+  text-decoration: none;
+  padding: 17px;
+  border-radius: 10px;
+  letter-spacing: 0.8px;
+  box-shadow: 1.1px 13px 20px rgba(254, 190, 113, 0.35);
+}
