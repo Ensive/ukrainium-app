@@ -5,6 +5,7 @@ const browserSync = require('browser-sync').create();
 const del = require('del');
 const wiredep = require('wiredep').stream;
 const runSequence = require('run-sequence');
+const AWS = require("aws-sdk");
 
 const $ = gulpLoadPlugins();
 const reload = browserSync.reload;
@@ -174,4 +175,26 @@ gulp.task('default', () => {
     dev = false;
     runSequence(['clean', 'wiredep'], 'build', resolve);
   });
+});
+
+gulp.task('deploy', ['default'], () => {
+  // create a new publisher
+  const publisher = $.awspublish.create({
+    region: "us-east-1",
+    params: {
+      'Bucket': 'ukrainium.com'
+    },
+    credentials: new AWS.SharedIniFileCredentials({ profile: "ukrainium-deploy" })
+  });
+
+  // define custom headers
+  const headers = {
+    'Cache-Control': 'max-age=315360000, no-transform, public'
+  };
+
+  return gulp.src('dist/**/*.*')
+    .pipe(publisher.publish(headers))
+    .pipe(publisher.sync())
+    .pipe(publisher.cache())
+    .pipe($.awspublish.reporter());
 });
