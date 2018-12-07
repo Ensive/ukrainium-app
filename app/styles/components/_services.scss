@@ -1,3 +1,7 @@
+.services {
+  background: url("../images/bg.png") no-repeat 0 340px;
+}
+
 .services-wrapper {
   display: flex;
   justify-content: space-between;
@@ -8,27 +12,28 @@
 .service-item {
   max-width: 570px;
   padding: 130px 40px 40px;
-  background-color: $white;
+  z-index: 1;
+  border-radius: 10px;
 
   @media screen and (min-width: 991px) {
     padding: 165px 63px 60px;
   }
 
   &:nth-of-type(1) {
-    background: url("../images/service-1.png") no-repeat 40px 30px;
+    background: $white url("../images/service-1.png") no-repeat 40px 30px;
     box-shadow: 0 0 30px rgba(246, 204, 153, 0.35);
 
     @media screen and (min-width: 991px) {
-      background: url("../images/service-1.png") no-repeat 63px 55px;
+      background: $white url("../images/service-1.png") no-repeat 63px 55px;
     }
   }
 
   &:nth-of-type(2) {
-    background: url("../images/service-2.png") no-repeat 40px 30px;
+    background: $white url("../images/service-2.png") no-repeat 40px 30px;
     box-shadow: 0 0 30px rgba(208, 208, 208, 0.35);
 
     @media screen and (min-width: 991px) {
-      background: url("../images/service-2.png") no-repeat 63px 55px;
+      background: $white url("../images/service-2.png") no-repeat 63px 55px;
     }
   }
 }

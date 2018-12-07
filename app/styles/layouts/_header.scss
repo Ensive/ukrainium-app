@@ -1,6 +1,14 @@
 .header {
   position: fixed;
-  padding: 60px 0 30px;
+  padding: 22px 0 18px;
   width: 100%;
-  background-color: rgba($white, 0.8);
+  background-color: rgba($white, 0.95);
+  z-index: 3;
+  box-shadow: 2px 2px 20px rgba($light-grey, 0.2);
+
+  @media screen and (min-width: 768px){
+    padding: 72px 0 30px;
+    background-color: rgba(254, 249, 245, 0.5);
+    box-shadow: none;
+  }
 }

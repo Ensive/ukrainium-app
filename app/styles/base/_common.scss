@@ -6,8 +6,9 @@
 
 html {
   font-size: 14px;
+  scroll-behavior: smooth;
 
-  @media screen and (min-width: 991px){
+  @media screen and (min-width: 991px) {
     font-size: 16px;
   }
 }
@@ -19,15 +20,36 @@ body {
   color: $dark-grey;
   line-height: 1.4;
   letter-spacing: 0.3px;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 section {
-  padding-top: 80px;
+  padding: 90px 0 20px;
 }
 
 .container {
   max-width: 1200px;
   width: 100%;
-  padding: 0 15px;
+  padding: 0 20px;
   margin: 0 auto;
+
+  @media screen and (min-width: 768px) {
+    padding: 0 15px;
+  }
+}
+
+.scroll-top {
+  position: fixed;
+  display: block;
+  bottom: 50px;
+  color: transparent;
+  background: $white;
+  right: 50px;
+  background: url("../images/scroll-top.svg") no-repeat center;
+  background-size: 55%;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  border: darkorange 4px solid;
 }

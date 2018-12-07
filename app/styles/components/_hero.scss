@@ -1,29 +1,44 @@
 .hero {
-  background: url("../images/hero-bg.png") no-repeat center center;
-  height: 95vh;
+  background: $white url("../images/hero-bg.png") no-repeat center -40px;
   display: flex;
+  height: 100vh;
   flex-direction: column;
   justify-content: center;
   background-size: cover;
+  padding-top: 180px;
+  margin-bottom: 60px;
+  position: relative;
+  z-index: 2;
 
+  &::before {
+    position: absolute;
+    left: -500px;
+    top: -343px;
+    filter: blur(50px) saturate(0);
+    z-index: 4;
+
+    @media screen and (min-width: 768px){
+      content: url(../images/orange-figure.gif);
+    }
+  }
 
   @media screen and (min-width: 991px){
     background-size: 100%;
-
+    padding-top: 170px;
   }
 }
 
 .hero__heading {
   font-size: 4.25rem;
   max-width: 900px;
-  font-weight: 700;
+  font-weight: 800;
   line-height: 1.176;
   text-transform: uppercase;
 }
 
 .hero__text {
   font-size: 1.562rem;
-  margin-top: 3.9rem;
+  margin-top: 2.9rem;
   max-width: 610px;
 }
 
