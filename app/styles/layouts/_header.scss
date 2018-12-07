@@ -6,9 +6,15 @@
   z-index: 3;
   box-shadow: 2px 2px 20px rgba($light-grey, 0.2);
 
+  .container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
   @media screen and (min-width: 768px){
     padding: 72px 0 30px;
-    background-color: rgba(254, 249, 245, 0.5);
+    background-color: rgba($white, 0.6);
     box-shadow: none;
   }
 }

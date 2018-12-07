@@ -1,11 +1,20 @@
 .testimonials {
   min-height: 600px;
+  position: relative;
+  background: url("../images/testimonials-bg.png") no-repeat 93% 110px;
 
   @media screen and (min-width: 769px) {
     min-height: 700px;
     margin-top: 5.8rem;
-    background: url("../images/testimonials-bg.png") no-repeat right 50px;
   }
+  //::before {
+  //  position: absolute;
+  //  content: url("../images/testimonials-bg.png");
+  //  //transform: translate(20%, -30%);
+  //  animation-delay: 1s;
+  //  right: 100px;
+  //  top: 300px;
+  //}
 }
 
 .testimonials-slider {

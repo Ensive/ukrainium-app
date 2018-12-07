@@ -25,15 +25,40 @@
   transition: all 0.25s;
 
   &:hover {
-    box-shadow: 1.1px 10px 20px rgba(254, 190, 113, 0.69);
-    filter: brightness(98%);
-    //transform: translateY(1px);
+    background-color: #fff;
+    color: #FF8C00;
   }
 }
 
 .button--submit {
-  margin-top: 30px;
+  display: block;
+  margin: 30px auto 0;
   padding: 17px;
   letter-spacing: 1px;
   width: 200px;
+  transition: background-color 0.15s;
+
+  &:hover {
+    background-color: darken($orange, 4);
+  }
+}
+
+.button--header {
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    display: block;
+    border-radius: 10px;
+    height: 55px;
+    padding: 8px;
+    background-color: #fff;
+    color: #FF8C00;
+    transition: all 0.25s;
+    box-shadow: 1.1px 13px 20px rgba(184, 184, 184, 0.25);
+  }
+
+  &:hover {
+    background-color: $orange;
+    color: $white;
+  }
 }

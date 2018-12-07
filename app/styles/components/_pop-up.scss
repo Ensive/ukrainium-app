@@ -1,0 +1,38 @@
+.pop-up {
+  display: none;
+  position: fixed;
+  padding: 25px;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  max-width: 700px;
+  border-radius: 5px;
+  box-shadow: 5px 5px 20px ($dark-grey, 0.5);
+  transform: translate(-50%, -50%);
+  z-index: 100;
+
+  .pop-up__close {
+    position: absolute;
+    top: 140px;
+    border: 0;
+    background: $white;
+    right: 70px;
+    font-size: 24px;
+    font-weight: 800;
+    color: $light-grey;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    transition: transform 1.2s ease-out;
+    filter: grayscale(100%);
+    background: url("../images/close.svg") no-repeat center;
+
+    &:hover {
+      transform: rotate(360deg);
+    }
+  }
+
+  &.is-shown {
+    display: block;
+  }
+}
