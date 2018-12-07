@@ -1,4 +1,5 @@
 // bower:scss
+@import "bower_components/slick-carousel/slick/slick.scss";
 // endbower
 @import './node_modules/reset-css/sass/reset';
 
@@ -14,6 +15,7 @@
 @import "components/hero";
 @import "components/nav";
 @import "components/list";
+@import "components/contacts";
 
 @import "layouts/header";
 @import "layouts/footer";

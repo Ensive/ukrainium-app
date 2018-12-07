@@ -1,5 +1,6 @@
 .main-nav {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .main-nav__link {
@@ -8,6 +9,24 @@
   color: $dark-grey;
   text-decoration: none;
   margin-right: 58px;
+  position: relative;
+  margin-top: 10px;
+
+  &::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 3px;
+    bottom: -10px;
+    background-color: $orange;
+    transition: width 0.25s;
+    border-radius: 5px;
+    transform-origin: center;
+  }
+
+  &:hover::before {
+    width: 100%;
+  }
 
   &:last-child {
     margin-right: 0;

@@ -11,6 +11,7 @@
 
     <!-- build:css styles/vendor.css -->
     <!-- bower:css -->
+    <link rel="stylesheet" href="/bower_components/slick-carousel/slick/slick.css" />
     <!-- endbower -->
     <!-- endbuild -->
 
@@ -26,30 +27,31 @@
     <header class="header">
       <div class="container">
         <nav class="main-nav">
-          <a href="#" class="main-nav__link">Team</a>
-          <a href="#" class="main-nav__link">Services</a>
-          <a href="#" class="main-nav__link">Testimonials</a>
-          <a href="#" class="main-nav__link">Contact us</a>
+          <a href="#team" class="main-nav__link js-link">Team</a>
+          <a href="#services" class="main-nav__link js-link">Services</a>
+          <a href="#testimonials" class="main-nav__link js-link">Testimonials</a>
+          <a href="#contacts" class="main-nav__link js-link">Contact us</a>
         </nav>
       </div>
     </header>
 
     <main>
-      <section class="hero">
+      <section class="hero" id="top">
         <div class="container">
           <h1 class="hero__heading">Top Frontend Developers</h1>
           <p class="hero__text">We hire and retain top frontend engineering talent to bring your project to the next level</p>
-          <a href="#" class="button button--hero">Get started</a>
+          <a href="#contacts" class="button button--hero js-links">Get started</a>
         </div>
       </section>
 
-      <section class="team">
+      <section id="team" class="team">
         <div class="container">
           <h2 class="section-heading">Our Team</h2>
           <p class="section-caption">We hire and retain top frontend engineering talent in Eastern Europe to bring your project to the next level</p>
           <div class="team-member-wrapper">
             <div class="team-member">
               <img src="" alt="" class="team-member__photo">
+              <!-- h3 -->
               <p class="team-member__name">Juriy Boychuk</p>
               <p class="team-member__title">React Dev</p>
             </div>
@@ -78,28 +80,36 @@
               <p class="team-member__name">Anton Honcharuk</p>
               <p class="team-member__title">CEO</p>
             </div>
+            <div class="team-member">
+              <img src="" alt="" class="team-member__photo">
+              <p class="team-member__name">Anton Honcharuk</p>
+              <p class="team-member__title">CEO</p>
+            </div>
+            <div class="team-member">
+              <img src="" alt="" class="team-member__photo">
+              <p class="team-member__name">Anton Honcharuk</p>
+              <p class="team-member__title">CEO</p>
+            </div>
           </div>
         </div>
       </section>
 
-      <section class="services">
+      <section id="services" class="services">
         <div class="container">
           <h2 class="section-heading">Our Services</h2>
-          <p class="section-caption">We hire and retain top frontend engineering talent in Eastern Europe to bring your project to the next level</p>
+          <h3 class="section-caption">We hire and retain top frontend engineering talent in Eastern Europe to bring your project to the next level</h3>
+
           <div class="services-wrapper">
             <div class="service-item">
               <h3 class="service-item__heading">Managed Team Extension</h3>
-              <div class="service-item__text text-small">
                 <ul class="list">
                   <li class="list__item">Team Extensions: Our talented technical team becomes an extension of your team, saving you time and resources on recruiting and onboarding</li>
                   <li class="list__item">Ongoing Bug Fixes & Support: You can rely on the team 24/7 for availability and assistance</li>
                   <li class="list__item">Long-Term Development: Our team becomes as vested in the success of your project as your own team</li>
                 </ul>
-              </div>
             </div>
             <div class="service-item">
               <h3 class="service-item__heading">Managed Team Extension</h3>
-              <div class="service-item__text text-small">
                 <ul class="list">
                   <li class="list__item">Team Extensions: Our talented technical team becomes an extension of your team, saving you time and resources on recruiting and onboarding</li>
                   <li class="list__item">Ongoing Bug Fixes & Support: You can rely on the team 24/7 for availability and assistance</li>
@@ -108,12 +118,66 @@
               </div>
             </div>
           </div>
+      </section>
+
+      <section id="testimonials" class="testimonials">
+        <div class="container">
+          <h2 class="section-heading"><strong>Discover Our Clients</strong><br>Feedback</h2>
+          <div class="testimonials-slider js-slider">
+            <div class="testimonial-slider__item">
+              <!-- blockquote -->
+              <p class="text">We’re on a mission to start a conversation with your customers in this fast connected world. Let’s discover, build and grow your digital business.</p>
+              <div class="testimonial-slider__client">
+                <p class="testimonial-slider__client-name">Mitch Fox</p>
+                <p class="testimonial-slider__client-title">Former VP Product, Couchsurfing</p>
+              </div>
+            </div>
+            <div class="testimonial-slider__item">
+              <p class="text">We’re on a mission to start a conversation with your customers in this fast connected world. Let’s discover, build and grow your digital business.</p>
+              <div class="testimonial-slider__client">
+                <p class="testimonial-slider__client-name">Hello Fox</p>
+                <p class="testimonial-slider__client-title">Former VP Product, Couchsurfing</p>
+              </div>
+            </div>
+            <div class="testimonial-slider__item">
+              <p class="text"></p>
+              <div class="testimonial-slider__client">
+                <p class="testimonial-slider__client-name"></p>
+                <p class="testimonial-slider__client-title"></p>
+              </div>
+            </div>
+            <div class="testimonial-slider__item">
+              <p class="text"></p>
+              <div class="testimonial-slider__client">
+                <p class="testimonial-slider__client-name"></p>
+                <p class="testimonial-slider__client-title"></p>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
+
+      <section class="contacts" id="contacts">
+        <div class="container">
+          <h2 class="section-heading">Contact us</h2>
+          <form action="" class="contact-form">
+            <input type="text" id="name" name="name" placeholder="Full Name" class="contact-form__field"/>
+            <div class="contact-form__field-wrapper">
+                <input type="text" id="email" name="email" placeholder="Email" class="contact-form__field"/>
+                <input type="text" id="phone" name="phone" placeholder="Phone" class="contact-form__field"/>
+            </div>
+            <textarea name="message" id="message" cols="30" rows="10" placeholder="Your Message" class="contact-form__field"></textarea>
+            <button class="button button--submit">Send</button>
+          </form>
+        </div>
+      </section>
+      <a href="#top" class="scroll-top js-link">.</a>
     </main>
 
     <footer class="footer">
-
+      <div class="container">
+        <p class="small-text">&copy; All rights reserved by Ukrainium</p>
+      </div>
     </footer>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
@@ -128,6 +192,8 @@
 
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
+    <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <script src="/bower_components/slick-carousel/slick/slick.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
