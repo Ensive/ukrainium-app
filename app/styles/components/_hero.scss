@@ -6,9 +6,12 @@
   justify-content: center;
   background-size: cover;
   padding-top: 180px;
-  margin-bottom: 60px;
   position: relative;
   z-index: 2;
+
+  @media screen and (min-width: 768px){
+    margin-bottom: 60px;
+  }
 
   &::before {
     position: absolute;
@@ -29,11 +32,15 @@
 }
 
 .hero__heading {
-  font-size: 4.25rem;
+  font-size: 3.25rem;
   max-width: 900px;
   font-weight: 800;
   line-height: 1.176;
   text-transform: uppercase;
+
+  @media screen and (min-width: 768px) {
+    font-size: 4.25rem;
+  }
 }
 
 .hero__text {

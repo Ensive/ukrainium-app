@@ -25,7 +25,11 @@ body {
 }
 
 section {
-  padding: 90px 0 20px;
+  padding: 10px 0 20px;
+
+  @media screen and (min-width: 768px){
+    padding: 90px 0 20px;
+  }
 }
 
 .container {
@@ -42,14 +46,18 @@ section {
 .scroll-top {
   position: fixed;
   display: block;
-  bottom: 50px;
+  bottom: 30px;
+  right: 15px;
   color: transparent;
-  background: $white;
-  right: 50px;
-  background: url("../images/scroll-top.svg") no-repeat center;
+  background: $white url("../images/scroll-top.svg") no-repeat center;
   background-size: 55%;
   height: 60px;
   width: 60px;
   border-radius: 50%;
   border: darkorange 4px solid;
+
+  @media screen and (min-width: 768px) {
+    bottom: 50px;
+    right: 50px;
+  }
 }
