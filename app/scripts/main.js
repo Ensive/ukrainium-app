@@ -9,7 +9,7 @@
   });
 
   const $root = $('body,html');
-  const $anchor = $('.js-link');
+  const $anchor = $('.js-scroll');
 
 
   $anchor.on('click', scrollToBlock);
@@ -21,25 +21,28 @@
     $root.animate({scrollTop: top}, 800);
   }
 
-  const $popUp = $('.js-pop-up');
-  const $popUpTrigger = $('.js-pop-up-button');
-  const $closePopup = $('.js-close');
+  const $modal = $('.js-modal');
+  const $modalTrigger = $('.js-open-modal');
+  const $closeModal = $('.js-close-modal');
 
-  $popUpTrigger.on('click', showPopUp);
-  $closePopup.on('click', hidePopUp);
-  $(document).on('mousedown', hidePopUp);
+  $modalTrigger.on('click', showModal);
+  $closeModal.on('click', hideModal);
+  $(document).on('mousedown', handleDocumentClick);
 
-  function showPopUp() {
-    $popUp.fadeIn('is-shown');
-    $('body').addClass('static');
+  function showModal() {
+    $modal.fadeIn('is-shown');
+    $('body').addClass('is-static');
   }
 
-  function hidePopUp(e) {
-    $popUp.fadeOut('is-shown');
-    $('body').removeClass('static');
+  function hideModal() {
+    $modal.fadeOut('is-shown');
+    $('body').removeClass('is-static');
+  }
 
-    if ($popUp.has(e.target).length === 0){
-      $popUp.removeClass('is-shown');
+  function handleDocumentClick(e) {
+    if ($modal.has(e.target).length === 0){
+      $modal.fadeOut('is-shown');
+      $('body').removeClass('is-static');
     }
   }
 })();

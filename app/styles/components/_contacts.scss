@@ -2,7 +2,7 @@
   position: relative;
   text-align: center;
   margin-top: 70px;
-  background: url("../images/contacts.png") no-repeat left;
+  background: url('../images/contacts.png') no-repeat left;
   box-shadow: inset -1px -105px 57px 75px rgba(255, 255, 255, 0.88);
 
   @media screen and (min-width: 768px) {
@@ -36,6 +36,7 @@
   width: 100%;
 }
 
-.contact-form--pop-up {
+.contact-form--modal {
   background-color: #f1f1f1;
+  box-shadow: 0 0 10px 1000px rgba(0, 0, 0, 0.3);
 }

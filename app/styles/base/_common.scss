@@ -23,7 +23,7 @@ body {
   overflow-x: hidden;
   animation: opacity 1s;
 
-  &.static {
+  &.is-static {
     max-height: 100vh;
     overflow-y: hidden;
 
@@ -73,7 +73,7 @@ section {
   bottom: 30px;
   right: 15px;
   color: transparent;
-  background: $white url("../images/scroll-top.svg") no-repeat center;
+  background: $white url('../images/scroll-top.svg') no-repeat center;
   background-size: 55%;
   height: 60px;
   width: 60px;

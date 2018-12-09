@@ -1,20 +1,12 @@
 .testimonials {
   min-height: 600px;
   position: relative;
-  background: url("../images/testimonials-bg.png") no-repeat 93% 110px;
+  background: url('../images/testimonials-bg.png') no-repeat 93% 110px;
 
   @media screen and (min-width: 769px) {
     min-height: 700px;
     margin-top: 5.8rem;
   }
-  //::before {
-  //  position: absolute;
-  //  content: url("../images/testimonials-bg.png");
-  //  //transform: translate(20%, -30%);
-  //  animation-delay: 1s;
-  //  right: 100px;
-  //  top: 300px;
-  //}
 }
 
 .testimonials-slider {
@@ -45,12 +37,12 @@
   bottom: -120px;
   border-radius: 50%;
   transition: all 0.25s;
-  background: url("../images/left-arrow.svg") no-repeat center;
+  background: url('../images/left-arrow.svg') no-repeat center;
   background-size: 50%;
   left: 0;
 
   &:hover {
-    background: $orange url("../images/left-arrow--hover.svg") no-repeat center center;
+    background: $orange url('../images/left-arrow--hover.svg') no-repeat center center;
     background-size: 50%;
   }
 }

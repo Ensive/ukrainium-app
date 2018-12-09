@@ -1,22 +1,22 @@
 // bower:scss
-@import "bower_components/slick-carousel/slick/slick.scss";
+@import 'bower_components/slick-carousel/slick/slick.scss';
 // endbower
 @import './node_modules/reset-css/sass/reset';
 
-@import "base/color-base";
-@import "base/font-styles";
-@import "base/fonts";
-@import "base/common";
+@import 'base/color-base';
+@import 'base/font-styles';
+@import 'base/fonts';
+@import 'base/common';
 
-@import "components/buttons";
-@import "components/services";
-@import "components/team";
-@import "components/testimonials";
-@import "components/hero";
-@import "components/nav";
-@import "components/list";
-@import "components/contacts";
-@import "components/pop-up";
+@import 'components/buttons';
+@import 'components/services';
+@import 'components/team';
+@import 'components/testimonials';
+@import 'components/hero';
+@import 'components/nav';
+@import 'components/list';
+@import 'components/contacts';
+@import 'components/pop-up';
 
-@import "layouts/header";
-@import "layouts/footer";
+@import 'layouts/header';
+@import 'layouts/footer';

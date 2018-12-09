@@ -27,16 +27,16 @@
     <header class="header">
       <div class="container">
         <nav class="main-nav">
-          <a href="#team" class="main-nav__link js-link">Team</a>
-          <a href="#services" class="main-nav__link js-link">Services</a>
-          <a href="#testimonials" class="main-nav__link js-link">Testimonials</a>
-          <a href="#contacts" class="main-nav__link js-link">Contact us</a>
+          <a href="#team" class="main-nav__link js-scroll">Team</a>
+          <a href="#services" class="main-nav__link js-scroll">Services</a>
+          <a href="#testimonials" class="main-nav__link js-scroll">Testimonials</a>
+          <a href="#contacts" class="main-nav__link js-scroll">Contact us</a>
         </nav>
-        <button class="button button--header js-pop-up-button">Get started</button>
+        <button class="button button--header js-open-modal">Get started</button>
       </div>
     </header>
-    <div class="pop-up js-pop-up">
-      <form action="" class="contact-form contact-form--pop-up">
+    <div class="modal js-modal">
+      <form action="" class="contact-form contact-form--modal">
         <input type="text" id="name" name="name" placeholder="Full Name" class="contact-form__field"/>
         <div class="contact-form__field-wrapper">
           <input type="text" id="email" name="email" placeholder="Email" class="contact-form__field"/>
@@ -45,7 +45,7 @@
         <textarea name="message" id="message" cols="30" rows="10" placeholder="Your Message" class="contact-form__field"></textarea>
         <button class="button button--submit">Send</button>
       </form>
-      <button class="pop-up__close js-close"></button>
+      <button class="modal__close js-close-modal"></button>
     </div>
 
     <main>
@@ -53,14 +53,14 @@
         <div class="container">
           <h1 class="hero__heading">SUPERCHARGE YOUR TEAM WITH EXPERT REACT.JS DEVELOPERS</h1>
           <p class="hero__text">We source the top frontend engineering talent in Eastern Europe to help you deliver beautiful user experience on a budget.</p>
-          <a href="#contacts" class="button button--hero js-link">Get started</a>
+          <a href="#contacts" class="button button--hero js-scroll">Get started</a>
         </div>
       </section>
 
       <section id="team" class="team">
         <div class="container">
-          <h2 class="section-heading">Our Team</h2>
-          <p class="section-caption">We hire and retain top frontend engineering talent in Eastern Europe to bring your project to the next level</p>
+          <h2 class="section-title">Our Team</h2>
+          <p class="section-subtitle">We hire and retain top frontend engineering talent in Eastern Europe to bring your project to the next level</p>
           <div class="team-member-wrapper">
             <div class="team-member">
               <img src="" alt="" class="team-member__photo">
@@ -109,8 +109,8 @@
 
       <section id="services" class="services">
         <div class="container">
-          <h2 class="section-heading">Our Services</h2>
-          <h3 class="section-caption">We provide Managed Team Extension. Our developers become an extension of your team, and work on your project only.</h3>
+          <h2 class="section-title">Our Services</h2>
+          <h3 class="section-subtitle">We provide Managed Team Extension. Our developers become an extension of your team, and work on your project only.</h3>
 
           <div class="services-wrapper">
             <div class="service-item">
@@ -135,7 +135,7 @@
 
       <section id="testimonials" class="testimonials">
         <div class="container">
-          <h2 class="section-heading"><strong>Discover Our Clients</strong><br>Feedback</h2>
+          <h2 class="section-title"><strong>Discover Our Clients</strong><br>Feedback</h2>
           <div class="testimonials-slider js-slider">
             <div class="testimonial-slider__item">
               <!-- blockquote -->
@@ -165,7 +165,7 @@
 
       <section class="contacts" id="contacts">
         <div class="container">
-          <h2 class="section-heading">Contact us</h2>
+          <h2 class="section-title">Contact us</h2>
           <form action="" class="contact-form">
             <input type="text" id="name" name="name" placeholder="Full Name" class="contact-form__field"/>
             <div class="contact-form__field-wrapper">
@@ -177,7 +177,7 @@
           </form>
         </div>
       </section>
-      <a href="#top" class="scroll-top js-link">.</a>
+      <a href="#top" class="scroll-top js-scroll">.</a>
     </main>
 
     <footer class="footer">
